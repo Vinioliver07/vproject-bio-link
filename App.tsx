@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { GlassCard } from './components/GlassCard';
 import { ProfileHeader } from './components/ProfileHeader';
 import { ActionGrid } from './components/ActionGrid';
@@ -7,11 +7,6 @@ import { FeaturedProject } from './components/FeaturedProject';
 import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
 
   return (
     <div className="min-h-screen relative w-full overflow-x-hidden flex flex-col items-center bg-slate-950">
@@ -22,6 +17,8 @@ const App: React.FC = () => {
         <img 
           src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
           alt="Tech Background"
+          loading="eager"
+          fetchPriority="high"
           className="w-full h-full object-cover opacity-40"
         />
         {/* Gradient Overlay for depth */}
@@ -33,12 +30,7 @@ const App: React.FC = () => {
       </div>
 
       {/* 2. Main Content Container */}
-      <main className={`
-        relative z-10 w-full max-w-md mx-auto min-h-screen
-        flex flex-col
-        transition-all duration-1000 transform
-        ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
-      `}>
+      <main className="relative z-10 w-full max-w-md mx-auto min-h-screen flex flex-col animate-fade-in-up">
         
         {/* Top Spacer */}
         <div className="h-6 md:h-12"></div>

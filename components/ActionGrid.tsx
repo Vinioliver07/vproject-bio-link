@@ -1,6 +1,6 @@
 import React from 'react';
 import { QUICK_ACTIONS } from '../constants';
-import { ExternalLink, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export const ActionGrid: React.FC = () => {
   return (

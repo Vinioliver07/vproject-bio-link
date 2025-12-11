@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserPlus, Save } from 'lucide-react';
+import { Save } from 'lucide-react';
 import { CONTACT_INFO, URLS } from '../constants';
 
 export const SaveContactButton: React.FC = () => {

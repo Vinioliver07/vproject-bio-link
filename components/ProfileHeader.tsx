@@ -15,6 +15,7 @@ export const ProfileHeader: React.FC = () => {
                 <img 
                     src={URLS.LOGO_SYMBOL} 
                     alt={CONTACT_INFO.name}
+                    loading="lazy"
                     className="w-16 h-16 object-contain relative z-10" 
                 />
                 {/* Inner radial gradient */}

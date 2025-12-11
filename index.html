@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="V Project - Soluções Digitais High-End. Desenvolvimento Web, Design UI/UX e Estratégias Digitais de alta performance." />
+    <meta name="theme-color" content="#00AEEF" />
     <title>V Project | Soluções Digitais</title>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -18,14 +27,9 @@
             colors: {
               neon: {
                 400: '#33C5FF',
-                500: '#00AEEF', // Brand Cyan
+                500: '#00AEEF',
                 600: '#008AC5',
               },
-              tech: {
-                dark: '#0F172A',
-                base: '#1B3B6F',
-                light: '#F8FAFC'
-              }
             },
             animation: {
               'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
@@ -50,36 +54,11 @@
         }
       }
     </script>
-    <style>
-      body {
-        background-color: #0F172A;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0F172A;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #00AEEF;
-        border-radius: 3px;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.559.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    
+    <link rel="stylesheet" href="/index.css" />
+  </head>
   <body class="bg-slate-900 text-white antialiased selection:bg-neon-500 selection:text-white">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
