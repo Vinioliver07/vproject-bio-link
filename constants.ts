@@ -50,12 +50,29 @@ export const QUICK_ACTIONS: SocialLink[] = [
   }
 ];
 
-export const FEATURED_PROJECT: ProjectData = {
-  id: '1',
-  title: 'Bio Link - Mateus Silva',
-  description: 'Cartão digital para consultoria tributária com design elegante e CTA de agendamento.',
-  tag: 'Ativo no Instagram',
-  // Screenshot do projeto real
-  imageUrl: '/projects/mateus-silva.png',
-  url: URLS.MATEUS_BIO
-};
+export const FEATURED_PROJECTS: ProjectData[] = [
+  {
+    id: '1',
+    title: 'Bio Link - Mateus Silva',
+    description: 'Cartão digital para consultoria tributária com design elegante e CTA de agendamento.',
+    tag: 'Ativo no Instagram',
+    imageUrl: '/projects/mateus-silva.png',
+    url: 'https://mateussilvacartaov.netlify.app/'
+  },
+  {
+    id: '2',
+    title: 'Bio Link - Dra. Lauane Mendonça',
+    description: 'Cartão digital premium para cirurgiã dentista com sistema de agendamento.',
+    tag: 'Case de Sucesso',
+    imageUrl: '/projects/dr-lauane.png',
+    url: 'https://dr-lauane-cartao-visita.netlify.app'
+  },
+  {
+    id: '3',
+    title: 'Landing Page - Panela Mineira',
+    description: 'Site responsivo para restaurante com cardápio digital e informações de contato.',
+    tag: 'Deploy Ativo',
+    imageUrl: '/projects/panela-mineira.png',
+    url: 'https://panela-mineira.vercel.app'
+  }
+];

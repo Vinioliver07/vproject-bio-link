@@ -34,6 +34,15 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Better rendering for high DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
 }
 
 a {

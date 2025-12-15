@@ -16,7 +16,8 @@ export const ProfileHeader: React.FC = () => {
                     src={URLS.LOGO_SYMBOL} 
                     alt={CONTACT_INFO.name}
                     loading="lazy"
-                    className="w-16 h-16 object-contain relative z-10" 
+                    className="w-16 h-16 object-contain relative z-10"
+                    style={{ imageRendering: '-webkit-optimize-contrast' }}
                 />
                 {/* Inner radial gradient */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-neon-500/20 to-transparent"></div>

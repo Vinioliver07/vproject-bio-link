@@ -15,7 +15,13 @@ const App: React.FC = () => {
       <div className="fixed inset-0 z-0">
         {/* Dark abstract tech background */}
         <img 
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=90"
+          srcSet="
+            https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=640&q=90 640w,
+            https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&q=90 1024w,
+            https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=90 1920w
+          "
+          sizes="100vw"
           alt="Tech Background"
           loading="eager"
           fetchPriority="high"
