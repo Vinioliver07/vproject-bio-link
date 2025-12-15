@@ -14,5 +14,6 @@ export interface ProjectData {
   description: string;
   tag: string;
   imageUrl: string;
+  mobileImageUrl?: string;
   url?: string;
 }

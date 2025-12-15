@@ -57,6 +57,7 @@ export const FEATURED_PROJECTS: ProjectData[] = [
     description: 'Cartão digital para consultoria tributária com design elegante e CTA de agendamento.',
     tag: 'Ativo no Instagram',
     imageUrl: '/projects/mateus-silva.png',
+    mobileImageUrl: '/projects/mateus-silva-cartaov-mobile.webp',
     url: 'https://mateussilvacartaov.netlify.app/'
   },
   {
@@ -65,6 +66,7 @@ export const FEATURED_PROJECTS: ProjectData[] = [
     description: 'Cartão digital premium para cirurgiã dentista com sistema de agendamento.',
     tag: 'Case de Sucesso',
     imageUrl: '/projects/dr-lauane.png',
+    mobileImageUrl: '/projects/dr-lauane-cartao-mobile.webp',
     url: 'https://dr-lauane-cartao-visita.netlify.app'
   },
   {
@@ -72,7 +74,8 @@ export const FEATURED_PROJECTS: ProjectData[] = [
     title: 'Landing Page - Panela Mineira',
     description: 'Site responsivo para restaurante com cardápio digital e informações de contato.',
     tag: 'Deploy Ativo',
-    imageUrl: '/projects/panela-mineira.png',
+    imageUrl: '/projects/panela-mineira.webp',
+    mobileImageUrl: '/projects/panela-mineira-mobile.webp',
     url: 'https://panela-mineira.vercel.app'
   }
 ];

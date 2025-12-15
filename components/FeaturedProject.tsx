@@ -55,13 +55,23 @@ export const FeaturedProject: React.FC = () => {
           block
         ">
           <div className="aspect-[2/1] w-full overflow-hidden relative">
-              <img 
-                  src={currentProject.imageUrl} 
-                  alt={currentProject.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
-                  style={{ imageRendering: 'crisp-edges' }}
-              />
+              <picture>
+                {currentProject.mobileImageUrl && (
+                  <source 
+                    media="(max-width: 768px)" 
+                    srcSet={currentProject.mobileImageUrl}
+                    type="image/webp"
+                  />
+                )}
+                <img 
+                    src={currentProject.imageUrl} 
+                    alt={currentProject.title}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                    style={{ imageRendering: 'crisp-edges' }}
+                />
+              </picture>
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
               
               <div className="absolute top-3 left-3 bg-neon-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded shadow-lg shadow-neon-500/20">
